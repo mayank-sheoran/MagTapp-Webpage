@@ -1,0 +1,183 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    background-color: black;
+}
+.navbar
+{
+    height: 6rem;
+    background-color: whitesmoke;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.container
+{
+    height: 6rem;
+    position: relative !important;
+}
+
+.logo
+{
+    padding-left: 3rem;
+    position: absolute;
+    top: 25%;
+    /* z-index: 99; */
+}
+
+.logo-img
+{
+    width: 180px;
+}
+
+
+.toogle-button
+{
+    color: rgb(226, 33, 33) !important;
+    float: right;
+    font-size: 2rem;
+    height: 50px;
+    width: 50px;
+    display: none;
+}
+
+.toogle-button-css
+{
+    color: rgb(160, 157, 157);
+}
+
+.nav-links
+{
+    float: right;
+    width: 50%;
+    /* background-color: yellow; */
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    
+}
+.nav-links ul
+{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 3rem;
+    position: relative;
+}
+
+.nav-links ul li a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.nav-links ul li
+{
+    font-size: 20px;
+    font-family: sans-serif;
+    /* background-color: violet; */
+    width: auto;
+    padding: 10px;
+    border-radius: 5px;
+    /* border: yellowgreen; */
+    transition: background-color 0.3s;
+    
+}
+
+.nav-links ul li:hover
+{
+    background-color: rgb(211, 210, 210);   
+}
+
+@media screen and (max-width: 1000px)
+{
+    .nav-links
+    {
+    float: right;
+    width: 70%;
+    /* background-color: yellow; */
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    }
+
+    .logo-img
+    {
+    width: 180px;
+    }
+
+    .nav-links ul li
+    {
+        margin-left: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 860px)
+{
+
+    .toogle-button
+    {
+        display: unset;
+        position: relative;
+        top: 30%;
+        right: 10%;
+        cursor: pointer;
+    }
+
+
+    .nav-links ul
+    {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 3rem;
+    position: relative;
+    }
+
+    .nav-links ul li
+    {
+    font-size: 20px;
+    font-family: sans-serif;
+    /* background-color: violet; */
+    width: auto;
+    padding: 10px;
+    border-radius: 5px;
+    /* border: yellowgreen; */
+    transition: background-color 0.3s;
+    
+    }
+    .nav-links
+    {
+        position: fixed;
+        z-index: -1;
+        display: flex;
+        flex-direction: column;
+        float: none;
+        left: 0;
+        top: 6rem;
+        background-color: whitesmoke;
+        height:25vh !important;
+        width: 100% !important;
+        transform: translateY(-100%);
+        justify-content: center;
+        transition: transform 0.3s ease-in;
+    }
+}
+
+.nav-active
+{
+    display: block;
+    transform: translateY(0%);
+}
