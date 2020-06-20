@@ -5,21 +5,24 @@
 }
 body
 {
-    background-color: black;
+    background-color: rgb(111, 55, 55);
+    z-index: -99999999;
 }
 .navbar
 {
-    height: 6rem;
     background-color: whitesmoke;
-    overflow: hidden;
-    position: relative;
-    
+    position: sticky;
+    top: 0;
+    align-items: center;
+    text-align: center;
 }
+
 
 .container
 {
-    height: 6rem;
+    height: 7rem;
     position: relative !important;
+    transition: 0.25s;
 }
 
 .logo
@@ -27,7 +30,14 @@ body
     padding-left: 3rem;
     position: absolute;
     top: 25%;
-    /* z-index: 99; */
+    transition: 0.5s;
+    /* z-index: 1; */
+}
+
+.logo-scroll
+{
+    top: 12.5%;
+    transition: 0.5s;
 }
 
 .logo-img
@@ -59,8 +69,17 @@ body
     position: absolute;
     top: 30%;
     left: 50%;
+    transition: 0.5s;
     
 }
+
+.nav-links-scroll
+{
+    top: 12.5%;
+    left: 45%;
+    transition: 0.5s;
+}
+
 .nav-links ul
 {
     text-decoration: none;
@@ -69,6 +88,9 @@ body
     justify-content: space-around;
     margin-right: 3rem;
     position: relative;
+
+    letter-spacing: 2px;
+    transition: 0.8s;
 }
 
 .nav-links ul li a
@@ -97,7 +119,7 @@ body
     background-color: rgb(211, 210, 210);   
 }
 
-@media screen and (max-width: 1000px)
+@media screen and (max-width: 1150px)
 {
     .nav-links
     {
@@ -118,19 +140,49 @@ body
     {
         margin-left: 2rem;
     }
+
+}
+
+.p2
+{
+    display: none;
+}
+
+.p1
+    {
+        display: block;
+    }
+
+
+
+.button-scroll
+{
+    top: 2.5% !important;
+    transition: 0.5s;
 }
 
 
-@media screen and (max-width: 860px)
+@media screen and (max-width: 970px)
 {
 
     .toogle-button
     {
         display: unset;
-        position: relative;
-        top: 30%;
+        position: fixed;
+        top: 5%;
+        transition: 0.5s;
         right: 10%;
         cursor: pointer;
+    }
+
+    .p1
+    {
+        display: none;
+    }
+
+    .p2
+    {
+    display: block;
     }
 
 
@@ -161,23 +213,105 @@ body
     .nav-links
     {
         position: fixed;
-        z-index: -1;
-        display: flex;
+        z-index: -50;
+        /* display: none; */
         flex-direction: column;
         float: none;
         left: 0;
-        top: 6rem;
+        top: 15%;
         background-color: whitesmoke;
-        height:25vh !important;
+        height:30vh !important;
         width: 100% !important;
-        transform: translateY(-100%);
         justify-content: center;
-        transition: transform 0.3s ease-in;
+        transform: translateY(-200%);
+    }
+
+    .comp1 p
+    {
+        font-size: 2.5vw !important;
     }
 }
 
-.nav-active
+.nav-active1
 {
-    display: block;
+    display: flex;
+    transform: translateY(-20%);
+    transition: transform 0.5s ease-in;
+}
+
+.nav-active2
+{
+    display: flex;
     transform: translateY(0%);
+    transition: transform 0.5s ease-in;
+}
+
+
+.content
+{
+    /* position: relative; */
+    text-align: center;
+    /* z-index: -1; */
+}
+
+.comp1-large
+{
+    background-image: url(./img/Rectangle\ 1630.png) !important;
+}
+
+
+.comp1-img
+{
+    padding-top: 4rem;
+    width: 70vw;
+}
+
+.comp1
+{
+    background-image: url(./img/Group\ 7036.png);
+    /* height: 100vh; */
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding-top: 3rem;
+    align-items: center;
+    /* position: relative; */
+    /* z-index: -5; */
+}
+
+.comp1 h3
+{
+    padding: 0;
+    margin: 0px 0px !important;
+    letter-spacing: 2px;
+    font-size:3.5vw; 
+    color: whitesmoke;
+    /* width: fit-content; */
+}
+
+.comp1 p
+{
+    color: whitesmoke;
+    padding: 2rem 15vw;
+    font-size: 1.5vw;
+    letter-spacing: 1.2px;
+}
+
+.nav-scroll
+{
+    height: 4rem;
+    transition: 0.25s;
+}
+
+
+.comp1-img2
+{
+    width: 10vw;
+    padding: 1rem 5rem;
+    /* position: relative;
+    z-index: 5555555; */
+}
+
+.links a
+{
+    text-decoration: none;
 }
