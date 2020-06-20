@@ -54,9 +54,17 @@ navSlide();
 
 
 if(window.innerWidth< 970){
+    document.querySelector('.comp1-img2').classList.add("comp1-link")
+    document.querySelector('#googleplaystore').style.width = "20vw"
     document.querySelector('.para').innerHTML = 'MagTapp 2.0 is coming with all new features that will make your life easier than before stay tuned!'
 }
 else{
     document.querySelector('.comp1').classList.add("comp1-large")
     document.querySelector('.para').innerHTML = 'MagTapp is an Empowerment Tool which helps anyone Read and UnderstandContent with the help of a Visual Meaning on Internet or in Documents files.MagTapp is a Web Browse with an Inbuilt Image Dictionary & Document Readerfeature.'
 }
+
+
+
+
+
+
