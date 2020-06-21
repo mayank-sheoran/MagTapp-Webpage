@@ -629,7 +629,7 @@ body
     position: relative;
     display: -ms-flexbox;
     width: 30vw;
-    height: 30vh;
+    height: 25vh;
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -728,9 +728,9 @@ body
 
   .phone-img
   {
-    width: 55%;
+    width: 50%;
     float: right;
-    margin-top:-45% ;
+    margin-top:-41% ;
   }
 
   .phone-img2
