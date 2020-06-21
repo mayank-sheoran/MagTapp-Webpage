@@ -15,6 +15,7 @@ body
     top: 0;
     align-items: center;
     text-align: center;
+    z-index: 5;
 }
 
 
@@ -162,6 +163,9 @@ body
 }
 
 
+
+
+
 @media screen and (max-width: 970px)
 {
 
@@ -235,14 +239,14 @@ body
 .nav-active1
 {
     display: flex;
-    transform: translateY(-20%);
+    transform: translateY(-22%);
     transition: transform 0.5s ease-in;
 }
 
 .nav-active2
 {
     display: flex;
-    transform: translateY(0%);
+    transform: translateY(-1%);
     transition: transform 0.5s ease-in;
 }
 
@@ -286,7 +290,10 @@ body
     font-size:3.5vw; 
     color: whitesmoke;
     /* width: fit-content; */
+    transition: 0.6s;
 }
+
+
 
 .comp1 p
 {
@@ -324,7 +331,10 @@ body
 .comp2-small
 {
     margin-top: 4rem; 
+    display: none;
 }
+
+
 
 .par
 {
@@ -341,7 +351,7 @@ body
     font-family: 'Roboto', sans-serif; 
     background-color: #4074EA;
     border-style: solid;
-    width: 20%;
+    width: 30%;
     margin: auto;
     color: whitesmoke;
     margin-bottom: 3rem;
@@ -355,7 +365,7 @@ body
     font-family: 'Roboto', sans-serif; 
     background-color: #ffffff;
     border-style: solid;
-    width: 28%;
+    width: 35%;
     font-size: 18px;
     margin: auto;
     color: rgb(0, 0, 0);
@@ -619,7 +629,7 @@ body
     position: relative;
     display: -ms-flexbox;
     width: 30vw;
-    height: 27vh;
+    height: 25vh;
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -666,9 +676,7 @@ body
   .decoration1
   {
       width: 30%;
-      position: absolute;
-      left: 70%;
-      top: 287%;
+      float: right;
   }
 
   .magdoc
@@ -683,7 +691,7 @@ body
     font-family: 'Roboto', sans-serif;
     color: whitesmoke;
     font-size: 4vw;
-    padding: 2rem 3rem;
+    padding: 2rem 1.5rem;
   }
 
   .para-body
@@ -691,14 +699,14 @@ body
     font-family: 'Roboto', sans-serif;
     color: whitesmoke;
     font-size: 2vw;
-    padding: 0rem 3rem;
+    padding: 0rem 1.5rem;
     width: 40%;
     padding-bottom: 3rem;
   }
 
   .magdoc i
   {
-    padding: 2rem 3rem;
+    padding: 2rem 1.5rem;
     padding-right: 1rem;
     padding-bottom: 0.5rem;
     color: whitesmoke;
@@ -717,3 +725,260 @@ body
     align-items: center;
     text-align: center;
   }
+
+  .phone-img
+  {
+    width: 55%;
+    float: right;
+    margin-top:-45% ;
+  }
+
+  .phone-img2
+  {
+      /* margin-top: 4rem; */
+      float: left;
+      padding-left: 1rem;
+      margin-top: -50%;
+      width: 60vw;
+  }
+
+  .comp3
+  {
+      display: inline-flex;
+      margin-top: 4rem;
+  }
+  .phone-img2-head
+  {
+      margin-top: 1.5rem;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 900;
+      padding-bottom: 2rem;
+      font-size: 3.5vw !important;
+  }
+
+  .comp3-text
+  {
+    text-align: start;
+    padding-left: 2.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .phone-img2-body
+  {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    padding-bottom: 2rem;
+    font-size: 2vw !important;
+    font-weight: 100;
+  }
+
+  .point-body
+  {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vw;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .comp4
+  {
+      text-align: start;
+      padding-left: 2rem;
+      background-image: url(./img/Group\ 7036.png);
+  }
+
+  .comp4 p
+  {
+    font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
+    font-size: 2.25vw;
+    width: 50%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .comp4-head
+  {
+    font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
+    font-size: 4vw;
+    width: 40%;
+  }
+
+  .sofa
+  {
+      margin-top: -18%;
+      padding-bottom: 2rem;
+  }
+
+  .know-more
+  {
+    font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
+    font-size: 4vw;
+    font-size: 2vw;
+    border-style: solid;
+    width: fit-content;
+    padding: 8px 8px;
+    border-radius: 10px;
+    border-width: 1.5px;
+  }
+
+  .review
+  {
+      margin-top: 4rem;
+      text-align: center;
+  }
+
+  .review h3
+  {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4vw;
+    padding-bottom: 1rem;
+  }
+
+  .review p
+  {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5vw;
+    padding: 0rem 3rem;
+  }
+
+  .customers
+  {
+      padding: 2rem 0rem;
+      display: inline-flex;
+  }
+
+  .customer
+  {
+    margin: 0rem 0.7rem;
+    width: 15vh;
+    height: 18vh;
+    /* border: 1px solid; */
+    padding: 10px;
+    box-shadow: 5px 10px 8px #888888;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .customer p
+  {
+      font-size: 2vw;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+  }
+
+  .customer h3
+  {
+      padding: 0;
+      font-size: 2.5vw;
+  }
+
+
+
+
+
+ .container-large
+ {
+     text-align: center;
+     margin-top: 4rem;
+     align-content: center;
+     text-align: center;
+ }
+
+ .container-large h3
+ {
+     font-size: 3vw;
+     font-family: 'Roboto', sans-serif;
+ }
+
+ .container-large h4
+ {
+     margin-top: 1.5rem;
+     font-size: 2vw;
+     font-family: 'Roboto', sans-serif;
+ }
+
+ .container-large p
+ {
+     margin-top: 1.5rem;
+     font-size: 1.3vw;
+     font-family: 'Roboto', sans-serif;
+     padding: 0 12rem;
+ }
+
+ .clickhere
+ {
+     border-style: solid;
+     width: fit-content;
+     margin: auto;
+     margin-top: 3rem;
+     font-size: 1.5vw;
+     font-family: 'Roboto', sans-serif;
+     background-color: #4074EA;
+     color: whitesmoke;
+     padding: 0.5rem 1.5rem;
+     border-radius: 10px;
+     text-decoration: none;
+ 
+ }
+
+ .img-translate
+ {
+     margin: 2rem;
+     width: 55%;
+     padding-right: 9rem;
+ }
+
+ .img-voice
+ {
+    margin: 2rem;
+    width: 55%;
+    padding-left: 12rem;
+ }
+
+ .img-language
+ {
+    margin: 2rem;
+    width: 55%;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 680px)
+{
+    .comp2-small
+    {
+        display: block;
+    }
+
+    .comp2-large
+    {
+        display: none;
+    }
+
+    .p2
+    {
+        display: block;
+    }
+
+    .p1
+    {
+        display: none;
+    }
+}
